@@ -1,0 +1,132 @@
+.threeiinc-header {
+    font-family: 'Montserrat', 'Poppins', sans-serif;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 10000;
+	height: 210px;
+	overflow: hidden;
+	-webkit-transition: height 0.3s;
+	-moz-transition: height 0.3s;
+	transition: height 0.3s;
+}
+
+.threeiinc-header .threeiinc-inner {
+	width: 100%;
+	max-width: 50em;
+	margin: 0 auto;
+	padding: 0 1.875em;
+}
+
+.threeiinc-header h1,
+.threeiinc-header nav {
+	display: inline-block;
+	position: relative;
+}
+
+ /* We just have one-lined elements, so we'll center the elements with the line-height set to the height of the header */
+.threeiinc-header h1,
+.threeiinc-header nav a {
+	line-height: 100px;
+}
+
+.threeiinc-header h1 {
+	text-transform: uppercase;
+	color: rgb(255, 255, 255);
+	letter-spacing: 4px;
+	font-size: 2.5em;
+	margin: 0;
+	float: left;
+}
+
+.threeiinc-header nav {
+	float: right;
+}
+
+.threeiinc-header nav a {
+	color: rgb(255, 255, 255);
+	font-weight: 600;
+	margin: 0 0 0 50px;
+	font-size: 1.2em;
+}
+
+.threeiinc-header nav a:hover {
+	color: rgb(255, 255, 255);
+}
+
+/* Transitions and class for reduced height */
+.threeiinc-header h1,
+.threeiinc-header nav a {
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.threeiinc-header.threeiinc-header-shrink {
+	height: 90px;
+}
+
+.threeiinc-header.threeiinc-header-shrink h1,
+.threeiinc-header.threeiinc-header-shrink nav a {
+	line-height: 90px;
+}
+
+.threeiinc-header.threeiinc-header-shrink h1 {
+	font-size: 2em;
+}
+
+/* Example Media Queries */
+@media screen and (max-width: 55em) {
+	
+	.threeiinc-header .threeiinc-inner {
+		width: 100%;
+	}
+
+	.threeiinc-header h1,
+	.threeiinc-header nav {
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+		float: none;
+		margin-left: -50px;
+	}
+
+	.threeiinc-header h1,
+	.threeiinc-header nav a {
+        line-height: 70px;
+		margin-top: 20px;
+		
+	}
+
+	.threeiinc-header nav a {
+        margin: 0 20px;
+
+	}
+
+	.threeiinc-header.threeiinc-header-shrink h1,
+	.threeiinc-header.threeiinc-header-shrink nav a {
+		line-height: 45px;
+	}
+
+	.threeiinc-header.threeiinc-header-shrink h1 {
+		font-size: 2em;
+	}
+
+	.threeiinc-header.threeiinc-header-shrink nav a {
+		font-size: 1em;
+	}
+}
+
+@media screen and (max-width: 32.25em) {
+	.threeiinc-header nav a {
+		font-size: 1em;
+	}
+}
+
+@media screen and (max-width: 24em) {
+	.threeiinc-header nav a,
+	.threeiinc-header.threeiinc-header-shrink nav a {
+		line-height: 1;
+	}
+}
