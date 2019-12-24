@@ -44,6 +44,9 @@
 	float: right;
 }
 
+.Logo__Brand {
+	color: rgb(255, 255, 255);
+}
 .threeiinc-header nav a {
 	color: rgb(255, 255, 255);
 	font-weight: 600;
@@ -52,7 +55,7 @@
 }
 
 .threeiinc-header nav a:hover {
-	color: rgb(255, 255, 255);
+	color: rgb(255, 240, 30);
 }
 
 /* Transitions and class for reduced height */

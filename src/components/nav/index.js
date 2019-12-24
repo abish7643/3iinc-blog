@@ -7,11 +7,11 @@ const Nav = () => (
     <header>
         <div className="threeiinc-header">
             <div className="threeiinc-inner">
-                <h1 href='/'>3i INC</h1>
-                <nav>
-                    <a href="/">About</a>
-                    <a href="/">Contact</a>
-                    <a href="/">Contribute</a>
+                <h1><Link to='/' className="Logo__Brand">3i INC</Link></h1>
+                <nav> 
+                    <Link to="/about" className="nav__link">About</Link>
+                    <Link to="/contact">Contact</Link>
+                    <Link to="/contribute">Contribute</Link>
                 </nav>
             </div>
         </div>
